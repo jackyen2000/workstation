@@ -5,18 +5,16 @@
 __author__="chiyuyen"
 __date__ ="$Sep 23, 2014 1:40:59 PM$"
 
-if __name__ == "__main__":
-
 
 #Three positive integers k, m, and n, representing a population containing k+m+n organisms: 
 #k t are homozygous dominant for a factor, m are heterozygous, and n are homozygous recessive.
 #Return the probability that two randomly selected mating organisms 
 #will produce an individual possessing a dominant allele
 
-
-    f = open('rosalind_mendel.txt', 'r')
+f = open('rosalind_mendel.txt', 'r')
 sets = f.readlines()
 f.close()
+
 
 for population in sets:
     k, m, n = map(float, population.split())
