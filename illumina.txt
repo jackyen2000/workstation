@@ -1,0 +1,42 @@
+Dear Jack,
+
+Thank you for your recent application to the Bioinformatics role at Illumina. We appreciate your interest and look forward to considering your candidacy. To help us to better evaluate your fit for the position, we ask that you please take the following written test according to the instructions below.
+
+Follow the link to http://rosalind.info/classes/enroll/1fb8e1d794/
+
+Instructions:
+1. Register for an account and proceed to the list of problems
+
+2. Using the computer language of your choice, solve the following problems:
+• Mendel’s First Law
+• Complementing a Strand of DNA
+• Rabbits and Recurrence Relations
+• Finding a Motif in DNA
+
+3. Please submit both your answers and your code to the website
+
+4. Once you are done, please send your user name to talentacquisition@illumina.com (Subject Line: Rosalind-Your full name)
+
+5. You have 1 hour to solve all of the problems once you start working
+
+6. Please find an hour within a week of receiving this e-mail
+
+7. You may not get help from people, books, or the internet
+
+FAQ:
+•Why do I need to take a written test just to apply?
+o The interview process involves extensive screening and often includes a site visit. To be respectful of your time and ours, we would like to determine if you are a good fit for the position as early in the process as possible.
+
+• What if I am finding the test to be too difficult?
+o In this case, you are not likely to be a good fit for the position.
+
+• What if I am finding the test to be too easy?
+o The test is not meant to be difficult. The interview questions will be more involved and the actual project assignments will be far more complex and interesting.
+
+• What if I am having trouble accessing the site?
+o Please contact the site administrator and notify HR at Illumina.
+
+• I have submitted my answers. Now what?
+o We will evaluate your results, along with your resume, to determine whether or not to schedule a phone interview. You will be contacted via email within 7 business days following your submittal.
+
+Good luck
