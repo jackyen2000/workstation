@@ -4,11 +4,6 @@
 # To change this template file, choose Tools | Templates
 # and open the template in the editor.
 
-__author__="chiyuyen"
-__date__ ="$Sep 23, 2014 1:44:54 PM$"
-
-if __name__ == "__main__":
-    import re
 
 f = open('rosalind_revc.txt', 'r')
 dna = f.readline()
@@ -30,5 +25,8 @@ for base in dna[::-1]:
         pass
     r_dna += base
 
-print r_dna
+print ("This is the original DNA strand: ", dna)
+print ("This is the reversed DNA strand: ", r_dna)
+
+print (end='\n')
 #print dna

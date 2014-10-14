@@ -34,6 +34,6 @@ for population in sets:
     prob -= 2*pn*(m/(t-1))*0.5
     #Minus the probability of both being heterozygous with the recessive allele (this is the 0.25)
     prob -= pm*((m-1)/(t-1))*0.25
-    print ("the probability is", prob)
+    print ("The probability is: ", prob)
 
-    print("this is the variable value", k,m,n)
+    print("This is the variable k, m, & n value: ", k,m,n)
