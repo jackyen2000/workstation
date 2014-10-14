@@ -1,23 +1,32 @@
 
 
-from Bio.Seq import Seq
+#from Bio.Seq import Seq
 
-dna = ("GATGGAACTTGACTACGTAAATT")
+#dnaSequence = ("GATGGAACTTGACTACGTAAATT")
 
 
-#f = open('rosalind_dna.txt', 'r')
-#dna = f.readline()
-#f.close()
+f = open('rosalind_rna.txt', 'r')
+dnaSequence = f.readline()
+f.close()
 
 #print (dnaSequence)
 
 
-trans = {           \
-        'A':'A',  \
-        'T':'U',  \
-        'C':'C',  \
-        'G':'G',  \
-}
+def transcribe(dna): 
+     """Return dna string as rna string.""" 
+     return dna.replace('T', 'U')       
+
+
+#print("This is the transcribed RNA sequence from DNA input: ",transcribe(dnaSequence))
+
+print(transcribe(dnaSequence))
+
+
+#my_dna
+#Seq('AGTACACTGGT', DNAAlphabet())
+#my_dna.transcribe()
+#Seq('AGUACACUGGU', RNAAlphabet())
+
 
 #for base in dna[::-1]:
 #    try:

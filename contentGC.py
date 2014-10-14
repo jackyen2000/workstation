@@ -4,11 +4,8 @@
 # To change this template file, choose Tools | Templates
 # and open the template in the editor.
 
-__author__="chiyuyen"
-__date__ ="$Sep 23, 2014 1:46:33 PM$"
 
-if __name__ == "__main__":
-    f = open('rosalind_gc.txt', 'r')
+f = open('rosalind_gc.txt', 'r')
 raw_samples = f.readlines()
 f.close()
 
@@ -26,6 +23,6 @@ for s_id, s in samples.iteritems():
     samples[s_id] = (float(s.count('G') + s.count('C'))/len(s))*100
 
 (s_id, gc) = max(list(samples.iteritems()), key = lambda item:item[1])
-print s_id
-print gc + '%'
+print (s_id)
+print (gc + '%')
 

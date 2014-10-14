@@ -15,7 +15,7 @@ def fibrabbit(n, k):
 #sample data 5 3
 
 
-with open('input.txt', 'r') as f:
+with open('rosalind_fib.txt', 'r') as f:
     n, k = f.readline().split()
     print (fibrabbit(int(n), int(k))[-1])
 

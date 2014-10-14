@@ -24,9 +24,7 @@ for base in dna[::-1]:
     except KeyError:
         pass
     r_dna += base
-
-print ("This is the original DNA strand: ", dna)
+#print ("This is the original DNA strand: ", dna)
 print ("This is the reversed DNA strand: ", r_dna)
 
-print (end='\n')
 #print dna
