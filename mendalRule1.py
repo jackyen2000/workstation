@@ -12,6 +12,8 @@ __date__ ="$Sep 23, 2014 1:40:59 PM$"
 #will produce an individual possessing a dominant allele
 
 f = open('rosalind_mendel.txt', 'r')
+
+
 sets = f.readlines()
 f.close()
 
@@ -32,4 +34,6 @@ for population in sets:
     prob -= 2*pn*(m/(t-1))*0.5
     #Minus the probability of both being heterozygous with the recessive allele (this is the 0.25)
     prob -= pm*((m-1)/(t-1))*0.25
-    print prob
+    print ("the probability is", prob)
+
+    print("this is the variable value", k,m,n)
