@@ -2,16 +2,12 @@
 # To change this template file, choose Tools | Templates
 # and open the template in the editor.
 
-__author__="chiyuyen"
-__date__ ="$Sep 23, 2014 1:40:59 PM$"
-
-
 #Three positive integers k, m, and n, representing a population containing k+m+n organisms: 
 #k t are homozygous dominant for a factor, m are heterozygous, and n are homozygous recessive.
 #Return the probability that two randomly selected mating organisms 
 #will produce an individual possessing a dominant allele
 
-f = open('rosalind_mendel.txt', 'r')
+f = open('rosalind_iprb.txt', 'r')
 
 
 sets = f.readlines()
@@ -37,3 +33,5 @@ for population in sets:
     print ("The probability is: ", prob)
 
     print("This is the variable k, m, & n value: ", k,m,n)
+
+    print(prob)
