@@ -2,7 +2,7 @@
 ##use biopython
 from Bio import SeqIO
 from Bio.SeqUtils import GC
-
+from operator import itemgetter, attrgetter, methodcaller
 
 def parse_fasta(s):
 	results = {}
@@ -69,13 +69,31 @@ if __name__ == "__main__":
 		#dna_Sequence[seq_record.id] = seq_record.seq
 
 		#rec = len(seq_record)
-		gc_values = sorted(GC(seq_record.seq) for seq_record in SeqIO.parse("dataset/rosalind_gc.fasta", "fasta"))
+	gc_values = sorted([seq_record.id, GC(seq_record.seq)] for seq_record in SeqIO.parse("dataset/rosalind_gc.fasta", "fasta"))
+
+	#gc_values = sorted(GC(seq_record.seq) for seq_record in SeqIO.parse("dataset/rosalind_gc.fasta", "fasta"))
+
+	#for seq_record in SeqIO.parse("dataset/rosalind_gc.fasta", "fasta"):
+		
 		#seq_id = seq_record.id
 		#print (seq_id)
 		#gc_values = GC(seq_record.seq) 
-		print (gc_values)
+		#gc_values = sorted[seq_record.id,GC(seq_record.seq)]
+		
+		#sortgc = gc_values[1](key=itemgetter(0))
 
+		#sortgc = sorted(gc_values[1])
 
+	print (gc_values)	
+	print (gc_values[3])
+		#print (sortgc)
+		#sorted(seq_record.seq, key= seq_record.)
+		#print (seq_record)	
+	#print (gc_values)	
+	#print (gc_values[-1])	
+	#print (gc_values[-1])
+
+	#print (seq_record.ID(gc_values[0]))
 
 		#for a_key, a_value in dna_Sequence.iteritems():
 		#	print (a_key, a_value)
@@ -117,8 +135,8 @@ if __name__ == "__main__":
 	#print (SeqIO.str(gcresults))
 
 
-	highest_k = None
-	highest_v = 0
+	#highest_k = None
+	#highest_v = 0
 
 	#for k, v in results.iteritems():
 	#    if v > highest_v:
