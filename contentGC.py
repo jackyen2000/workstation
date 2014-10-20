@@ -69,7 +69,7 @@ if __name__ == "__main__":
 		#dna_Sequence[seq_record.id] = seq_record.seq
 
 		#rec = len(seq_record)
-	gc_values = sorted([seq_record.id, GC(seq_record.seq)] for seq_record in SeqIO.parse("dataset/rosalind_gc.fasta", "fasta"))
+	#gc_values = sorted([seq_record.id, GC(seq_record.seq)] for seq_record in SeqIO.parse("dataset/rosalind_gc.fasta", "fasta"))
 
 	#gc_values = sorted(GC(seq_record.seq) for seq_record in SeqIO.parse("dataset/rosalind_gc.fasta", "fasta"))
 
@@ -84,8 +84,21 @@ if __name__ == "__main__":
 
 		#sortgc = sorted(gc_values[1])
 
-	print (gc_values)	
-	print (gc_values[3])
+
+high_id = None
+high_gc = 0
+
+    for record in SeqIO.parse("dataset/rosalind_gc.fasta", "fasta", generic_dna):
+        gc = GC(record.seq)
+        if gc > high_gc:
+            high_id = record.id
+            high_gc = gc
+
+    print(high_id)
+    print('{:.3f}'.format(high_gc))	
+	#print (gc_values)	
+
+	#print (gc_values[3],key=itemgetter(1))
 		#print (sortgc)
 		#sorted(seq_record.seq, key= seq_record.)
 		#print (seq_record)	

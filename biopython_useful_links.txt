@@ -1,0 +1,6 @@
+http://biopython-cn.readthedocs.org/en/latest/en/chr14.html
+
+http://www.biotnet.org/sites/biotnet.org/files/documents/25/biopython_seqio.pdf
+
+
+http://bigdatauniversity.com/wpcourses/

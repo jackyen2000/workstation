@@ -21,4 +21,4 @@ DNA = 'TTTGGGGTATTTGGGGTTTTGGGGCTCATTTGGGGCGTCATTTTGGGGTTTGGGGGTTTGGGGGGAGTTTGGG
 motif = 'TTTGGGGTT'
 print ("position of the motif: ", ' '.join(str(m+1) for m in find_motif(motif, DNA)))
 
-print(' '.join(str(m+1) for m in find_motif(motif, DNA)))
+#print(' '.join(str(m+1) for m in find_motif(motif, DNA)))
