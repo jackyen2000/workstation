@@ -19,7 +19,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description='Translating RNA into Protein')
     parser.add_argument(
-        'dataset', metavar='FILE', type=argparse.FileType('r'),
+        'dataset', metavar="dataset/test.fasta", type=argparse.FileType('r'),
         help='An RNA string s corresponding to a strand of mRNA '
         '(of length at most 10 kbp)')
     args = parser.parse_args()
