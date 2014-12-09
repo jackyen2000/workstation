@@ -16,7 +16,7 @@ for line in f:
     continue
 
   data.setdefault(seq_id,"")
-  data[seq_id] += line.strip()
+  data[seq_id] += line.strip().decode("utf-8")
 
 M = []
 for i in data:
